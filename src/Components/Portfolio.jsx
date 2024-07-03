@@ -19,9 +19,9 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/pf.png";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Abstract image of a woman";
 
 /**
  * Project list
@@ -31,34 +31,34 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: " SoundBar (Music App): ",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Developed SoundBar, a minimalist MusicApp featuring intuitive controls for seamless playback.",
+    url: "https://github.com/tanieshaa/music-app",
   },
   {
-    title: "Web Development for Beginners",
+    title: " To-Do List:",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A simple To-Do List application built using React. Allows users to add, delete, edit tasks, and mark tasks as completed.",
+    url: "https://github.com/tanieshaa/Todo-List",
   },
   {
-    title: "My Resume Site",
+    title: "Landing Page:",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "React Landing Page: A simple landing page template built using React with dynamic visuals.",
+    url: "https://github.com/tanieshaa/Landing-page",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Twitter Clone:",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "A simple frontend for the Twitter Clone built using tailwind CSS for a highly responsive and visually appealing user interface..",
+    url: "https://github.com/tanieshaa/twitter-clone",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="portfolio" style= {{ backgroundColor: "black", color: "white" }}>
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
@@ -70,8 +70,8 @@ const Portfolio = () => {
         </div>
         <div className="container">
           {projectList.map((project) => (
-            <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+            <div className="box" key={project.title} style={{ color: "white" }}>
+              <a href={project.url} target="_blank" rel="noopener noreferrer" style={{ color: "white" }}>
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
